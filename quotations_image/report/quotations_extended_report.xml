@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="quotations_add_product_image" inherit_id="sale.report_saleorder_document">
+		<xpath expr="//table/thead/tr/th[5]" position="after">
+			<th>Imagen</th>
+		</xpath>
+		<xpath expr="//tbody[@class='sale_tbody']//tr//td[5]" position="after">
+			<td>
+				<span t-field="l.product_id.image_medium" t-field-options='{"widget": "image"}' />
+			</td>
+		</xpath>
+	</template>
+</odoo>
