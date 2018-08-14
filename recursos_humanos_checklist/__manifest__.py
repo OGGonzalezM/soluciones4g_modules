@@ -20,6 +20,7 @@
     'depends': [
         'base',
         'validacion_checklist',
+        'hr_recruitment',
         'hr'
     ],
     'data': [

@@ -10,7 +10,7 @@ class EventModel(models.Model):
     name = fields.Char(string='Nombre del evento', required=True)
     description = fields.Text(string='Descripción')
 
-    nivel_academico = fields.Many2one('ops4g.nivel', string='Nivel académico')
+    # nivel_academico = fields.Many2one('ops4g.nivel', string='Nivel académico')
 
     code = fields.Char(string='Ingrese una clave para el evento', required=True)
     check_list = fields.Many2many(comodel_name='ops4g.check_list_event',
